@@ -2,7 +2,7 @@
 using UnityEngine.UI;
 
 [CreateAssetMenu]
-public class Card : ScriptableObject
+public class CharacterCard : ScriptableObject
 {
     public Classe classe;
     public string descricao;

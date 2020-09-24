@@ -3,7 +3,7 @@ using UnityEngine.UI;
 
 public class CardDisplay : MonoBehaviour
 {
-    public Card card;
+    public CharacterCard card;
     public Text classe;
     public Text descricao;
     public Text habilidade;

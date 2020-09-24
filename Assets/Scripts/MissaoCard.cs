@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 
 [CreateAssetMenu]
-public class Missao : ScriptableObject
+public class MissaoCard : ScriptableObject
 {
     public Sprite artwork;
 }
