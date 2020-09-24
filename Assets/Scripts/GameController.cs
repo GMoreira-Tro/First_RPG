@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class GameController : MonoBehaviour
@@ -14,13 +15,17 @@ public class GameController : MonoBehaviour
         GameManager.activePlayerIndex = 0;
     }
     /// <summary>
-    /// Selecionar o personagem para o jogador em questãono OnMouseUp
+    /// Selecionar o personagem para o jogador em questão no OnMouseUp
     /// </summary>
     private void OnMouseUp()
     {
-        print("clicou");
-        GameManager.players[GameManager.activePlayerIndex] = new Player(GetComponent<CharacterCard>());
+        var card = GetComponent<CardDisplay>().card;
+        GameManager.players[GameManager.activePlayerIndex] = new Player(card.classe, card.artwork);
         GameManager.activePlayerIndex = (GameManager.activePlayerIndex + 1) % GameManager.players.Length;
+
+        if (GameManager.activePlayerIndex == 0)
+            SceneManager.LoadScene("Game");
+
         gameObject.SetActive(false);
     }
 }

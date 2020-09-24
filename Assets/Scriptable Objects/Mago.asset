@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: Mago
   m_EditorClassIdentifier: 
   classe: 1
-  descricao: "Nem todos os que aqui vagueiam est\xE3o perdidos!"
-  habilidade: "Pode trocar uma carta de \"habilidade\" por uma ficha \"miss\xE3o\"
-    virada para baixo no mapa. Apenas se conseguir tirar 1 no dado."
+  descricao: "Pode trocar uma carta de \"habilidade\" por uma ficha \"miss\xE3o\"
+    virada para baixo no mapa. Apenas se conseguir tirar 1 no dado. "
   artwork: {fileID: 21300000, guid: 1bdaa4c31f76bda4e8aac4bc5182081d, type: 3}

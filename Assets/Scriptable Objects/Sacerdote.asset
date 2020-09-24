@@ -13,6 +13,5 @@ MonoBehaviour:
   m_Name: Sacerdote
   m_EditorClassIdentifier: 
   classe: 4
-  descricao: "A luz h\xE1 de queimar voc\xEA!"
-  habilidade: Pode recuperar uma carta de habilidade na pilha de descarte.
+  descricao: Capaz de recuperar uma carta habilidade do monte de descarte.
   artwork: {fileID: 0}

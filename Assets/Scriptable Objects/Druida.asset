@@ -13,6 +13,5 @@ MonoBehaviour:
   m_Name: Druida
   m_EditorClassIdentifier: 
   classe: 2
-  descricao: WHOOOAAARRR!
-  habilidade: "Pode locomover-se um espa\xE7o a mais quando tira 1/2 no dado."
+  descricao: "Pode locomover-se um espa\xE7o a mais quando tira 1/2 no dado."
   artwork: {fileID: 21300000, guid: 90e0c7814cedc224bb1bca94677dc7a1, type: 3}

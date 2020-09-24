@@ -1,14 +1,18 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
-public class Player : MonoBehaviour
+public class Player
 {
-    private CharacterCard character;
+    [HideInInspector]
+    public Classe classe { get; private set; }
+    [HideInInspector]
+    public Sprite characterSprite { get; private set; }
     private List<HabilidadeCard> habilidades = new List<HabilidadeCard>();
     private List<MissaoCard> missoes = new List<MissaoCard>();
 
-    public Player(CharacterCard character)
+    public Player(Classe classe, Sprite characterSprite)
     {
-        this.character = character;
+        this.classe = classe;
+        this.characterSprite = characterSprite;
     }
 }
