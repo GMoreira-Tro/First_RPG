@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 016746a4e67b1614aa59fe9fc9d15633, type: 3}
+  m_Name: Ladino
+  m_EditorClassIdentifier: 
+  classe: 3
+  descricao: ...
+  habilidade: "Pode roubar uma ficha \"miss\xE3o\". Se um jogador pr\xF3ximo (no
+    m\xEDnimo 4 quadrados a frente) conquistar uma ficha \"miss\xE3o\", o ladino
+    pode fazer um teste no dado para roubar essa ficha, 4 ou 6 o roubo \xE9 efetivado
+    e o jogador alvo entrega a ficha ao ladino."
+  artwork: {fileID: 21300000, guid: 68812d42a001f7d40883cadef6188663, type: 3}
