@@ -3,12 +3,22 @@ using UnityEngine;
 
 public class Player
 {
+    /// <summary>
+    /// Classe do personagem
+    /// </summary>
     [HideInInspector]
     public Classe classe { get; private set; }
     [HideInInspector]
     public Sprite characterSprite { get; private set; }
-    private List<HabilidadeCard> habilidades = new List<HabilidadeCard>();
-    private List<MissaoCard> missoes = new List<MissaoCard>();
+
+    /// <summary>
+    /// Lista de habilidades coletadas pelo jogador
+    /// </summary>
+    private List<Habilidade> habilidades = new List<Habilidade>();
+    /// <summary>
+    /// Lista de missões coletadas pelo jogador
+    /// </summary>
+    private List<Missao> missoes = new List<Missao>();
 
     public Player(Classe classe, Sprite characterSprite)
     {

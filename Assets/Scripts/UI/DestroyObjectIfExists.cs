@@ -2,13 +2,14 @@
 
 public class DestroyObjectIfExists : MonoBehaviour
 {
+    public string objectName;
     private void Awake()
     {
-        gameObject.name = "Music";
+        gameObject.name = "";
 
-        if (GameObject.Find("MusicSource") != null) {
+        if (GameObject.Find(objectName) != null) {
             Destroy(gameObject);
         }
-        gameObject.name = "MusicSource";
+        gameObject.name = objectName;
     }
 }

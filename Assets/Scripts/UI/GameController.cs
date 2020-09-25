@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class GameController : MonoBehaviour
@@ -23,8 +22,10 @@ public class GameController : MonoBehaviour
         GameManager.players[GameManager.activePlayerIndex] = new Player(card.classe, card.artwork);
         GameManager.activePlayerIndex = (GameManager.activePlayerIndex + 1) % GameManager.players.Length;
 
-        if (GameManager.activePlayerIndex == 0)
-            SceneManager.LoadScene("Game");
+        if (GameManager.activePlayerIndex == 0) {
+            GameManager.Init();
+            SceneController.LoadSceneDestroyingMusic("Game");
+        }
 
         gameObject.SetActive(false);
     }
