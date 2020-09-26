@@ -2,7 +2,15 @@
 
 public class SelectPlayer : MonoBehaviour
 {
+    /// <summary>
+    /// Áudio do botão a disparar quando selecionar um personagem
+    /// </summary>
     public AudioSource buttonAudio;
+    /// <summary>
+    /// O emissor de luz da carta
+    /// </summary>
+    public Light lightEmissor;
+
     /// <summary>
     /// Selecionar o personagem para o jogador em questão no OnMouseUp
     /// </summary>
@@ -19,5 +27,15 @@ public class SelectPlayer : MonoBehaviour
         }
 
         gameObject.SetActive(false);
+    }
+
+    private void OnMouseEnter()
+    {
+        lightEmissor.enabled = true;
+    }
+
+    private void OnMouseExit()
+    {
+        lightEmissor.enabled = false;
     }
 }
