@@ -28,7 +28,7 @@ public class SoundButton : MonoBehaviour
     {
         ToggleMusicVolume();
         SetToNextSprite();
-        //PlayButtonSound();
+        PlayButtonSound();
     }
     public void ToggleMusicVolume()
     {
