@@ -14,11 +14,11 @@ public class Player
     /// <summary>
     /// Lista de habilidades coletadas pelo jogador
     /// </summary>
-    private List<Habilidade> habilidades = new List<Habilidade>();
+    public List<Habilidade> habilidades = new List<Habilidade>();
     /// <summary>
     /// Lista de missões coletadas pelo jogador
     /// </summary>
-    private List<Missao> missoes = new List<Missao>();
+    public List<Missao> missoes = new List<Missao>();
 
     public Player(Classe classe, Sprite characterSprite)
     {

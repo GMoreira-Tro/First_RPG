@@ -23,7 +23,6 @@ public class GameController : MonoBehaviour
         GameManager.activePlayerIndex = (GameManager.activePlayerIndex + 1) % GameManager.players.Length;
 
         if (GameManager.activePlayerIndex == 0) {
-            GameManager.Init();
             SceneController.LoadSceneDestroyingMusic("Game");
         }
 

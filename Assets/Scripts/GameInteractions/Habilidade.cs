@@ -1,21 +1,11 @@
 ﻿using UnityEngine;
 
-public class Habilidade
+public abstract class Habilidade : MonoBehaviour
 {
     public int nivelDeDificuldade;
-    public int indiceDaCarta;
-    public Action action;
 
-    public delegate void Action();
+    public virtual void CallAction()
+    {
 
-    public Habilidade(int nivelDeDificuldade, int indiceDaCarta, Action action)
-    {
-        this.nivelDeDificuldade = nivelDeDificuldade;
-        this.indiceDaCarta = indiceDaCarta;
-        this.action = action;
-    }
-    public void CallAction()
-    {
-        action();
     }
 }

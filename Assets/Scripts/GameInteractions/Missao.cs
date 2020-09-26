@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class Missao
+public class Missao : MonoBehaviour
 {
     public Sprite artwork;
 }
