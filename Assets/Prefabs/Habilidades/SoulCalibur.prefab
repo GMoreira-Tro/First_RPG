@@ -65,7 +65,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: d3f77de5cd8894040a84c5bec1665b8f, type: 3}
+  m_Sprite: {fileID: 177159673087789770, guid: cd86ceb2c873f03458931eeba07841d7, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -180,7 +180,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49a30e14d8382274d9951ad34671bd7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nivelDeDificuldade: 5
 --- !u!1 &6260203424289244735
 GameObject:
   m_ObjectHideFlags: 0
@@ -318,7 +317,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 1, b: 0, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -338,4 +337,6 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Carta muito foda
+  m_Text: "Voc\xEA encontra um mercador misterioso no meio da estrada, ele te vende
+    2 passos no pre\xE7o de qualquer ficha \"miss\xE3o\".  Tirar 2 ou mais no dado
+    para efetivar."

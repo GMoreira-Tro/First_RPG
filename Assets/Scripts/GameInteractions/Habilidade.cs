@@ -2,7 +2,8 @@
 
 public abstract class Habilidade : MonoBehaviour
 {
-    public int nivelDeDificuldade;
+    [HideInInspector]
+    public int diceNumber { get; protected set; }
 
     public virtual void CallAction()
     {
