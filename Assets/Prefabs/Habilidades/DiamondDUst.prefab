@@ -337,5 +337,5 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Po\xE7\xE3o congelante, paralisa um jogador por 2 turnos. N\xEDvel de
-    dificuldade: dif\xEDcil. Tirar 5 ou no dado para efetivar."
+  m_Text: "Po\xE7\xE3o congelante, paralisa um jogador por 2 turnos. Tirar 5 ou 6
+    no dado para efetivar."

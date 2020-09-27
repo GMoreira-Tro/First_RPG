@@ -337,6 +337,5 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Um feiti\xE7o de troca \xE9 lan\xE7ado contra voc\xEA. O inimigo pode
-    escolher uma carta habilidade que voc\xEA tenha e troca - l\xE1 por uma dele.
-    Tirar 3 ou mais no dado para efetivar."
+  m_Text: Escolha uma "Habilidade" de um inimigo e troque uma das suas. Tirar 3 ou
+    mais no dado para efetivar.
