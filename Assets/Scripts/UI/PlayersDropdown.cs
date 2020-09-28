@@ -9,7 +9,8 @@ public class PlayersDropdown : MonoBehaviour
     /// <param name="dropdown"> O dropdown que contém a opção selecionada</param>
     public void SetPlayersQuantity(Dropdown dropdown)
     {
-        GameManager.players = new Player[dropdown.value +2];
+        GameManager.players = new GameManager.PlayerStruct[dropdown.value +2];
         GameManager.activePlayerIndex = 0;
+
     }
 }

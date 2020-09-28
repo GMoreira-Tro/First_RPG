@@ -4,11 +4,16 @@ using UnityEngine;
 
 public class RUN : HabilidadeDefensiva
 {
-    public override void CallAction()
+    public override void CounterAction()
     {
-        diceNumber = GameManager.D6Roll();
-        if (diceNumber < 3)
+        base.CounterAction();
+
+        player.diceNumber = GameManager.D6Roll();
+
+        if (player.diceNumber < 3)
             return;
+
+        player.effects.RemoveAt(player.effects.Count - 1);
 
     }
 }

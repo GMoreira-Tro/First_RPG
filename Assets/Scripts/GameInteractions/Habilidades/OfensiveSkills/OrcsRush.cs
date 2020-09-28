@@ -4,10 +4,14 @@ using UnityEngine;
 
 public class OrcsRush : HabilidadeOfensiva
 {
-    public override void CallAction()
+    public override void AttackAction(Player target)
     {
-        diceNumber = GameManager.D6Roll();
-        if (diceNumber < 5)
+        base.AttackAction(player);
+
+        player.diceNumber = GameManager.D6Roll();
+        player.CallPlayerEffects();
+
+        if (player.diceNumber < 5)
             return;
 
     }

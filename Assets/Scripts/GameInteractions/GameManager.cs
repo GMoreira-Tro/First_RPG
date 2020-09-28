@@ -1,4 +1,4 @@
-﻿using System;
+﻿using UnityEngine;
 
 /// <summary>
 /// Classe ESTÁTICA que guarda os dados do jogo e funções de gameplay
@@ -6,9 +6,20 @@
 public static class GameManager
 {
     /// <summary>
-    /// Jogadores que irão jogar a partida
+    /// Jogadores que irão jogar a partida em estrutura
     /// </summary>
-    public static Player[] players;
+    public static PlayerStruct[] players;
+    public struct PlayerStruct
+    {
+        public Classe classe { get; private set; }
+        public Sprite characterSprite { get; private set; }
+
+        public void SetPlayer(Classe classe, Sprite characterSprite)
+        {
+            this.classe = classe;
+            this.characterSprite = characterSprite;
+        }
+    };
     /// <summary>
     /// Jogador ativo no turno
     /// </summary>
@@ -19,7 +30,7 @@ public static class GameManager
     /// </summary>
     /// <returns> número retornado </returns>
     public static int D6Roll() {
-        return new Random().Next(1,6);
+        return new System.Random().Next(1,6);
     }
     /// <summary>
     /// Sortear um número aleatório (1 a 10)
@@ -27,7 +38,7 @@ public static class GameManager
     /// <returns> número retornado </returns>
     public static int D10Roll()
     {
-        return new Random().Next(1, 10);
+        return new System.Random().Next(1, 10);
     }
     /// <summary>
     /// Sortear um número aleatório (1 a 20)
@@ -35,6 +46,6 @@ public static class GameManager
     /// <returns> número retornado </returns>
     public static int D20Roll()
     {
-        return new Random().Next(1, 20);
+        return new System.Random().Next(1, 20);
     }
 }

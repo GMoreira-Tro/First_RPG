@@ -4,11 +4,18 @@ using UnityEngine;
 
 public class Greed : HabilidadeOfensiva
 {
-    public override void CallAction()
+    public override void AttackAction(Player target)
     {
-        diceNumber = GameManager.D6Roll();
-        if (diceNumber < 2)
+        base.AttackAction(target);
+
+        player.diceNumber = GameManager.D6Roll();
+        player.CallPlayerEffects();
+
+        if (player.diceNumber < 2 || player.missoes.Count > 2)
             return;
 
+        var missao = target.missoes[new System.Random().Next() % target.missoes.Count];
+        target.missoes.Remove(missao);
+        player.missoes.Add(missao);
     }
 }

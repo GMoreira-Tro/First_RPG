@@ -4,11 +4,20 @@ using UnityEngine;
 
 public class CopyEye : HabilidadeOfensiva
 {
-    public override void CallAction()
+    public override void SelfAction()
     {
-        diceNumber = GameManager.D6Roll();
-        if (diceNumber < 3)
+        base.SelfAction();
+
+        player.diceNumber = GameManager.D6Roll();
+        player.CallPlayerEffects();
+
+        if (player.diceNumber < 3)
             return;
 
+        var discardStackHabilities = GameObject.Find("DiscardStack").GetComponent<CardsStack>().habilidades;
+        try {
+            player.habilidades.Add(discardStackHabilities[discardStackHabilities.Count-1]);
+        }
+        catch(System.IndexOutOfRangeException) { }
     }
 }

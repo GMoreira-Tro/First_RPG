@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DarkMirrorForce : HabilidadeDefensiva
+public class PLAGUE : HabilidadeDefensiva
 {
     public override void ReflectAction(Player target)
     {
@@ -10,7 +10,7 @@ public class DarkMirrorForce : HabilidadeDefensiva
 
         player.diceNumber = GameManager.D6Roll();
 
-        if (player.diceNumber < 5)
+        if (player.diceNumber < 3)
             return;
 
         int count = (player.effects.Count - 1);

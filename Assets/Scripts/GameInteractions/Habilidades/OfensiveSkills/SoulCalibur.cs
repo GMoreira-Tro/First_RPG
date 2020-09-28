@@ -4,11 +4,19 @@ using UnityEngine;
 
 public class SoulCalibur : HabilidadeOfensiva
 {
-    public override void CallAction()
+    public override void SelfAction()
     {
-        diceNumber = GameManager.D6Roll();
-        if (diceNumber < 2)
+        base.SelfAction();
+
+        player.diceNumber = GameManager.D6Roll();
+        player.CallPlayerEffects();
+
+        if (player.diceNumber < 2)
             return;
 
+        if(player.missoes.Count > 0) {
+            player.missoes.RemoveAt(new System.Random().Next() % player.missoes.Count);
+            player.passos += 2;
+        }
     }
 }

@@ -6,9 +6,13 @@ public class ArcaneIntellect : HabilidadeOfensiva
 {
     public override void SelfAction()
     {
-        player.effects += () =>
+        base.SelfAction();
+
+        int effectIndex = player.effects.Count;
+        player.effects.Add(() =>
         {
             player.diceNumber = 6;
-        };
+            player.effects.RemoveAt(effectIndex);
+        });
     }
 }
