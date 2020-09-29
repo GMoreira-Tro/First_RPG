@@ -490,11 +490,11 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0, g: 1, b: 0, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_NormalColor: {r: 0, g: 0.49803922, b: 0, a: 1}
+    m_HighlightedColor: {r: 0, g: 0.49803922, b: 0, a: 1}
+    m_PressedColor: {r: 0, g: 1, b: 0, a: 1}
+    m_SelectedColor: {r: 0, g: 1, b: 0, a: 1}
+    m_DisabledColor: {r: 0, g: 0.49803922, b: 0, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -622,11 +622,11 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 1, g: 0, b: 0, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_NormalColor: {r: 0.49803922, g: 0, b: 0, a: 1}
+    m_HighlightedColor: {r: 0.49803922, g: 0, b: 0, a: 1}
+    m_PressedColor: {r: 1, g: 0, b: 0, a: 1}
+    m_SelectedColor: {r: 1, g: 0, b: 0, a: 1}
+    m_DisabledColor: {r: 0.49803922, g: 0, b: 0, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -1068,25 +1068,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 220cf918c80c3b44f85b219de0b95eb4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stringArray:
-  - "1. Cada jogador sorteia uma carta da pilha de cartas \u201Cclasse\u201D no come\xE7o
-    do jogo, que proporciona uma vantagem, e recebe duas cartas \"habilidade\". Lembrando
-    que sua mochila tem um limite apenas para duas cartas \"habilidade\" e 3 fichas
-    \"miss\xE3o\".  2. Os jogadores podem se movimentar utilizando um d6. Cada um
-    joga uma vez. No seu turno, o jogador pode comprar uma carta \u201Chabilidade\u201D
-    se estiver com menos de uma carta permitida. "
-  - "4. Durante o jogo os participantes podem usar cartas \"habilidade\" para impulsion\xE1-los
-    a vit\xF3ria ou afundar outros jogadores. Apenas 2 cartas s\xE3o permitidas em
-    equipamentos. Elas podem ser utilizadas somente no turno do jogador ou, ainda,
-    para se defender de ataques de outros participantes.   5. A efetividade das cartas
-    \xE9 decidida atrav\xE9s de um d6. O n\xFAmero tirado \xE9 comparado com o valor
-    de dificuldade daquela habilidade apresentado na carta. \xC9 necess\xE1rio que
-    se tire um valor igual ou acima do que est\xE1 registrado na carta. "
-  - "6. Ap\xF3s encontrar as tr\xEAs fichas \"miss\xE3o\u201D com s\xEDmbolos iguais
-    o jogador deve ser o primeiro a chegar na taverna a salvo com as fichas em seguran\xE7a.  
-    Detalhes: neg\xF3cios entres jogadores s\xE3o permitidos, assim como blefes e
-    roubos, se ningu\xE9m viu nunca aconteceu."
   text: {fileID: 4512280040222213344}
+  buttonsAudio: {fileID: 1568878664}
 --- !u!1001 &2130477351
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1387,6 +1370,21 @@ PrefabInstance:
         se movimentar utilizando um d6. Cada um joga uma vez. No seu turno, o jogador
         pode comprar uma carta \u201Chabilidade\u201D se estiver com menos de uma
         carta permitida.\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4512280040408571523, guid: dd9d38d75eac9b34a9cc69022c8afaa7,
+        type: 3}
+      propertyPath: m_FontData.m_BestFit
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4512280040408571523, guid: dd9d38d75eac9b34a9cc69022c8afaa7,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 4512280040408571523, guid: dd9d38d75eac9b34a9cc69022c8afaa7,
+        type: 3}
+      propertyPath: m_FontData.m_MinSize
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4512280040408571524, guid: dd9d38d75eac9b34a9cc69022c8afaa7,
         type: 3}

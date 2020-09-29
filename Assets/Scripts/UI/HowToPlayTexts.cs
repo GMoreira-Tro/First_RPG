@@ -4,6 +4,7 @@ using UnityEngine.UI;
 public class HowToPlayTexts : MonoBehaviour
 {
     public Text text;
+    public AudioSource buttonsAudio;
 
     private string[] stringArray = new string[3];
     private int activeStringIndex = 0;
@@ -43,6 +44,7 @@ public class HowToPlayTexts : MonoBehaviour
 
         activeStringIndex++;
         text.text = stringArray[activeStringIndex];
+        buttonsAudio.Play();
     }
 
     public void PreviousText()
@@ -52,5 +54,6 @@ public class HowToPlayTexts : MonoBehaviour
 
         activeStringIndex--;
         text.text = stringArray[activeStringIndex];
+        buttonsAudio.Play();
     }
 }

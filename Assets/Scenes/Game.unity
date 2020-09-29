@@ -152,51 +152,51 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75847f241dfe0994f9d77101d0aa1c11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  habilidades:
-  - {fileID: 7905422341582832750, guid: 8fd8395151c3ff24faca096ea312473a, type: 3}
-  - {fileID: 7071859815918768807, guid: 579a55b3653ff5f42b9e104a162bc1cf, type: 3}
-  - {fileID: 3491767823015212137, guid: c0b719bda615ad64da6d9559a4dbe546, type: 3}
-  - {fileID: 400647373491601338, guid: cff3bd6c4bac4534c8318d188b639b18, type: 3}
-  - {fileID: 4632253802019929360, guid: 13e3436100335e24babc9ca1951c5c56, type: 3}
-  - {fileID: 1053884939815745464, guid: ae9efa268de502048957d91301c8408d, type: 3}
-  - {fileID: 1551804326196678070, guid: b127243906f907a4bb53dc29693bf975, type: 3}
-  - {fileID: 3046061927894299743, guid: e8b98613eef601045aa2a57366db86fb, type: 3}
-  - {fileID: 8106244838162665503, guid: 3bb15366c908bda41aa56a6e7667a538, type: 3}
-  - {fileID: 4247811082024819407, guid: 5dbff01a506881641babc462443aecd9, type: 3}
-  - {fileID: 1063809426160223971, guid: c31a076ddac54084683230cce5cec52f, type: 3}
-  - {fileID: 5014870449913339359, guid: 3517fc1319ea4db41a06234df1397f32, type: 3}
-  - {fileID: 7866493922526600161, guid: 27242cab3bc35564c94d5df88cef1cbf, type: 3}
-  - {fileID: 7151897266947429098, guid: 7b5afdade0139704c8d9fee90676e4fa, type: 3}
-  - {fileID: 820652292953023286, guid: 1d598ff90d6c8a041b2b56542ac438a3, type: 3}
-  - {fileID: 8217419912681025871, guid: 88c5afbcee6662a409989647d0cb08a3, type: 3}
-  - {fileID: 2962839124854813975, guid: 53b83e35406cb244b8846caad87d7a0d, type: 3}
-  - {fileID: 8246421468606764677, guid: fcfc8731880d1a24384e951fa10003e0, type: 3}
-  - {fileID: 1542192274853770538, guid: 2702d2e4740e6d2408ead2b456f262cc, type: 3}
-  - {fileID: 5017528864554761036, guid: fea36da4cee573641bd750b8e1967680, type: 3}
-  - {fileID: 7243426547532963337, guid: ce4e1fdecdb53414fb723ff45d388e4c, type: 3}
-  - {fileID: 2007544724243717838, guid: 64b8d1de2f3c44d4783500477b0fcd74, type: 3}
-  - {fileID: 693479192966420423, guid: afd24b097c6a80644bd2bbd02b915b7b, type: 3}
-  - {fileID: 8715677197289607789, guid: 8d32f687040dceb409bb571cc5406c69, type: 3}
-  - {fileID: 2910630308654286150, guid: fa3742e2c06fd794dad546a2152198e8, type: 3}
-  - {fileID: 5387344632343621566, guid: b002cb28f33f0b144ad3bf991f5046ca, type: 3}
-  - {fileID: 8125724213319479870, guid: 2c4c30eb1ff39a84db1249f02fb0111b, type: 3}
-  - {fileID: 4672196101077482018, guid: b47e0116158a7994689bab45ca76766c, type: 3}
-  - {fileID: 1875178772140586467, guid: 0d5f185c88cf5054f893627a33f473d1, type: 3}
-  - {fileID: 399994246641463846, guid: c04b7fd0919e56f43a56ed6121acdffd, type: 3}
-  - {fileID: 8345473638963141751, guid: f3d80dd860e537e499b345d022c509a1, type: 3}
-  missoes:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  habilidadesGO:
+  - {fileID: 6260203423513837678, guid: 8fd8395151c3ff24faca096ea312473a, type: 3}
+  - {fileID: 6260203423513837678, guid: 579a55b3653ff5f42b9e104a162bc1cf, type: 3}
+  - {fileID: 6260203423513837678, guid: c0b719bda615ad64da6d9559a4dbe546, type: 3}
+  - {fileID: 6260203423513837678, guid: cff3bd6c4bac4534c8318d188b639b18, type: 3}
+  - {fileID: 6260203423513837678, guid: 13e3436100335e24babc9ca1951c5c56, type: 3}
+  - {fileID: 6260203423513837678, guid: ae9efa268de502048957d91301c8408d, type: 3}
+  - {fileID: 6260203423513837678, guid: b127243906f907a4bb53dc29693bf975, type: 3}
+  - {fileID: 6260203423513837678, guid: e8b98613eef601045aa2a57366db86fb, type: 3}
+  - {fileID: 6260203423513837678, guid: 3bb15366c908bda41aa56a6e7667a538, type: 3}
+  - {fileID: 6260203423513837678, guid: 5dbff01a506881641babc462443aecd9, type: 3}
+  - {fileID: 6260203423513837678, guid: c31a076ddac54084683230cce5cec52f, type: 3}
+  - {fileID: 6260203423513837678, guid: 3517fc1319ea4db41a06234df1397f32, type: 3}
+  - {fileID: 6260203423513837678, guid: 27242cab3bc35564c94d5df88cef1cbf, type: 3}
+  - {fileID: 6260203423513837678, guid: 7b5afdade0139704c8d9fee90676e4fa, type: 3}
+  - {fileID: 6260203423513837678, guid: 1d598ff90d6c8a041b2b56542ac438a3, type: 3}
+  - {fileID: 6260203423513837678, guid: 88c5afbcee6662a409989647d0cb08a3, type: 3}
+  - {fileID: 6260203423513837678, guid: 53b83e35406cb244b8846caad87d7a0d, type: 3}
+  - {fileID: 6260203423513837678, guid: fcfc8731880d1a24384e951fa10003e0, type: 3}
+  - {fileID: 6260203423513837678, guid: 2702d2e4740e6d2408ead2b456f262cc, type: 3}
+  - {fileID: 6260203423513837678, guid: fea36da4cee573641bd750b8e1967680, type: 3}
+  - {fileID: 6260203423513837678, guid: ce4e1fdecdb53414fb723ff45d388e4c, type: 3}
+  - {fileID: 6260203423513837678, guid: 64b8d1de2f3c44d4783500477b0fcd74, type: 3}
+  - {fileID: 6260203423513837678, guid: afd24b097c6a80644bd2bbd02b915b7b, type: 3}
+  - {fileID: 6260203423513837678, guid: 8d32f687040dceb409bb571cc5406c69, type: 3}
+  - {fileID: 6260203423513837678, guid: fa3742e2c06fd794dad546a2152198e8, type: 3}
+  - {fileID: 6260203423513837678, guid: b002cb28f33f0b144ad3bf991f5046ca, type: 3}
+  - {fileID: 6260203423513837678, guid: 2c4c30eb1ff39a84db1249f02fb0111b, type: 3}
+  - {fileID: 6260203423513837678, guid: b47e0116158a7994689bab45ca76766c, type: 3}
+  - {fileID: 6260203423513837678, guid: 0d5f185c88cf5054f893627a33f473d1, type: 3}
+  - {fileID: 6260203423513837678, guid: c04b7fd0919e56f43a56ed6121acdffd, type: 3}
+  - {fileID: 6260203423513837678, guid: f3d80dd860e537e499b345d022c509a1, type: 3}
+  missoesGO:
+  - {fileID: 6260203423513837678, guid: 3fdd87a37a024914da1ac2624049e95a, type: 3}
+  - {fileID: 6260203423513837678, guid: 3fdd87a37a024914da1ac2624049e95a, type: 3}
+  - {fileID: 6260203423513837678, guid: 3fdd87a37a024914da1ac2624049e95a, type: 3}
+  - {fileID: 6260203423513837678, guid: 087077b37342ae74387ebcfd6b238869, type: 3}
+  - {fileID: 6260203423513837678, guid: 087077b37342ae74387ebcfd6b238869, type: 3}
+  - {fileID: 6260203423513837678, guid: 087077b37342ae74387ebcfd6b238869, type: 3}
+  - {fileID: 6260203423513837678, guid: f7fc2fc8cb7908349a4aeaf0a5b02136, type: 3}
+  - {fileID: 6260203423513837678, guid: f7fc2fc8cb7908349a4aeaf0a5b02136, type: 3}
+  - {fileID: 6260203423513837678, guid: f7fc2fc8cb7908349a4aeaf0a5b02136, type: 3}
+  - {fileID: 6260203423513837678, guid: 46d0df4ac84b529479870c52da46f989, type: 3}
+  - {fileID: 6260203423513837678, guid: 46d0df4ac84b529479870c52da46f989, type: 3}
+  - {fileID: 6260203423513837678, guid: 46d0df4ac84b529479870c52da46f989, type: 3}
 --- !u!4 &69151369
 Transform:
   m_ObjectHideFlags: 0
@@ -591,7 +591,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9083d2e7dcc0fce4ba4a75e5a042b7cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playersGO: []
 --- !u!224 &964924328 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4486688787041756036, guid: df1a151db3c2b7c4c96d9f402694d43f,
@@ -627,8 +626,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75847f241dfe0994f9d77101d0aa1c11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  habilidades: []
-  missoes: []
+  habilidadesGO: []
+  missoesGO: []
 --- !u!4 &1037533276
 Transform:
   m_ObjectHideFlags: 0

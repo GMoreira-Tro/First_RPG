@@ -14,9 +14,10 @@ public class CopyEye : HabilidadeOfensiva
         if (player.diceNumber < 3)
             return;
 
-        var discardStackHabilities = GameObject.Find("DiscardStack").GetComponent<CardsStack>().habilidades;
+        var discardStackHabilities = GameObject.Find("DiscardStack").GetComponent<CardsStack>().habilidadesGO;
         try {
-            player.habilidades.Add(discardStackHabilities[discardStackHabilities.Count-1]);
+            player.habilidades.Add(discardStackHabilities[discardStackHabilities.Count-1]
+                .GetComponent<Habilidade>());
         }
         catch(System.IndexOutOfRangeException) { }
     }

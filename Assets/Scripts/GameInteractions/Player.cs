@@ -39,10 +39,9 @@ public class Player : MonoBehaviour
 
     public delegate void Effect();
 
-    public void SetPlayer(Classe classe, Sprite characterSprite)
+    public void SetPlayer(Classe classe)
     {
         this.classe = classe;
-        this.characterSprite = characterSprite;
     }
 
     public void CallPlayerEffects()
