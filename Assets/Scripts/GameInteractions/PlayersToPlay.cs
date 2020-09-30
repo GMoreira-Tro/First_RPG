@@ -4,10 +4,13 @@ using UnityEngine;
 
 public class PlayersToPlay : MonoBehaviour
 {
+    public GameObject TurnHud;
+    public GameObject canvasGO;
+
     public static Player[] players;
     public static PlayerTurn[] playersTurns;
 
-    void Start()
+    private void Start()
     {
         players = new Player[GameManager.players.Length];
         playersTurns = new PlayerTurn[GameManager.players.Length];
@@ -19,8 +22,6 @@ public class PlayersToPlay : MonoBehaviour
             //Adicionando um componente Player para cada game Object
             players[i] = playerGO.AddComponent<Player>();
 
-            //Adicionando o Scritpt de controle de turno ao Player
-            playersTurns[i] = playerGO.AddComponent<PlayerTurn>();
             //Setando a classe do Player
             players[i].SetPlayer(GameManager.players[i].classe);
 
@@ -30,6 +31,9 @@ public class PlayersToPlay : MonoBehaviour
             //Setando a escala do Player
             playerGO.gameObject.transform.localScale = new Vector2(0.2f, 0.2f);
             
+            //Adicionando o Scritpt de controle de turno ao Player
+            playersTurns[i] = playerGO.AddComponent<PlayerTurn>();
+
             //Setando as posições onde cada Player deve nascer
             switch (i)
             {
@@ -46,6 +50,7 @@ public class PlayersToPlay : MonoBehaviour
                     playerGO.gameObject.transform.position = new Vector3(-1.5f, -0.9f);
                     break;
             }
+            playerGO.transform.SetParent(canvasGO.transform);
         }
 
         //Desativando o Player turn de todos os jogadores que não o primeiro
@@ -55,14 +60,7 @@ public class PlayersToPlay : MonoBehaviour
         }
     }
 
-    public static void EndPlayerTurn()
-    {
-        for (int i = 1; i < playersTurns.Length; i++)
-        {
-            playersTurns[i].enabled = true;
-        }
-        playersTurns[GameManager.activePlayerIndex].enabled = false;
-
-        GameManager.activePlayerIndex = (GameManager.activePlayerIndex + 1) % players.Length;
+    public GameObject InstantiateTurnHud(Transform playerPosition) {
+        return Instantiate(TurnHud, playerPosition);
     }
 }

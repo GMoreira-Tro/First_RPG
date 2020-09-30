@@ -17,24 +17,35 @@ public class PlayerTurn : MonoBehaviour
     /// </summary>
     private Player player;
 
-    private void Start()
+    private PlayersToPlay playersManager;
+    private TurnHud turnHud;
+
+    private void OnEnable()
+    {
+       turnHud = playersManager.InstantiateTurnHud(gameObject.transform).GetComponent<TurnHud>();
+       turnHud.InitializeTurnHud(player);
+    }
+    private void OnDisable()
+    {
+        Destroy(turnHud.gameObject);
+    }
+
+    private void Awake()
     {
         player = gameObject.GetComponent<Player>();
         movePoint = gameObject.transform;
-        StartCoroutine(UpdatePlayerPosition());
-    }
-
-    private void Update()
-    {
-        transform.position = Vector3.MoveTowards(transform.position, movePoint.position, Time.deltaTime);
+        playersManager = GameObject.Find("PlayersManager").GetComponent<PlayersToPlay>();
+        //StartCoroutine(UpdatePlayerPosition());
     }
 
     /// <summary>
     /// Coroutina para atualizar a posição do Player, de acordo com os direcionais W,A,S,D clicados
     /// </summary>
     /// <returns></returns>
-    private IEnumerator UpdatePlayerPosition()
+    public IEnumerator UpdatePlayerPosition()
     {
+        transform.position = Vector3.MoveTowards(transform.position, movePoint.position, Time.deltaTime);
+
         while(player.passos > 0) {
             if (Vector3.Distance(transform.position, movePoint.position) <= 0.01f)
             {
@@ -61,5 +72,14 @@ public class PlayerTurn : MonoBehaviour
             }
             yield return new WaitForSeconds(step);
         }
+    }
+
+    public static void EndPlayerTurn()
+    {
+        PlayersToPlay.playersTurns[GameManager.activePlayerIndex].enabled = false;
+
+        GameManager.activePlayerIndex = (GameManager.activePlayerIndex + 1) % PlayersToPlay.players.Length;
+
+        PlayersToPlay.playersTurns[GameManager.activePlayerIndex].enabled = true;
     }
 }
